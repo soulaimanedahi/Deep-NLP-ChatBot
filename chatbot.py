@@ -328,6 +328,8 @@ with tf.name_scope("optimization"):
     optimizer_gradient_clipping = optimizer.apply_gradients(clipped_gradients)
 
 # Padding the sequences with the <PAD> token
+# Question: [ 'Who', 'are', 'you', <PAD>, <PAD>, <PAD>, <PAD> ]
+# Answer: [ <SOS>, 'I', 'am', 'a', 'bot' '.', <EOS>, <PAD> ]
 def apply_padding(batch_of_sequences, word2int):
     max_sequence_length = max([len(sequence) for sequence in batch_of_sequences])
     return [sequence + [word2int['<PAD>']] * (max_sequence_length - len(sequence)) for sequence in batch_of_sequences]
