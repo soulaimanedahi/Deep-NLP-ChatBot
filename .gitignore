@@ -1,3 +1,67 @@
 data.spydata
 movie_conversations.txt
 movie_lines.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.venv3/
+.vscode/
+
+# Editor/IDE
+.idea/
+.vscode/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Local configuration file (e.g., .env files)
+.env
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Test coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+.coverage.*
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Django
+*.log
+db.sqlite3
+
+# Flask
+instance/
+
+# Sphinx documentation
+docs/_build/
+doc/build/
+
+# Pytest
+pytest_cache/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+dataset/
